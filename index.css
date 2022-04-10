@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --gray-1:#333333;
+  --gray-2: #4F4F4F;
+  --white-1:white;
+  font-size: 10px;
+}
+.header {
+  align-items: center;
+  padding: 40px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+.header a {
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: -0.08rem;
+  color: var(--gray-1);
+  line-height: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.main {
+  justify-content: center;
+  max-width: 1440px;
+  padding: 0 80px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+}
+.main .conteiner-img {
+  max-width: 530px;
+}
+.main .conteiner-img img {
+  display: block;
+  width: 100%;
+}
+
+.main .contant-main h1 {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: -0.035rem;
+  color: var(--gray-1);
+  line-height: 9.4rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+  max-width: 586px;
+}
+.main .contant-main p {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: -0.035rem;
+  color: var(--gray-2)  ;
+  line-height: 3.6rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-top: 36px;
+  max-width: 380px;
+}
+
+.main .contant-main a {
+  font-family: 'Space Mono', monospace;
+  background: var(--gray-1);
+  text-transform: uppercase;
+  letter-spacing: -0.035rem;
+  justify-content: center;
+  color: var(--white-1);
+  align-items: center;
+  margin: 64px 0 0 0;
+  transition: 200ms;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  max-width: 216px;
+  padding: 24px 0;
+  display: flex;
+}
+.main .contant-main a:hover {
+  background: var(--gray-2);
+}
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  color: var(--gray-2);
+  align-items: center;
+  line-height: 1.7rem;
+  position: absolute;
+  max-width: 1440px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  max-height: 80px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+}
+.footer strong {
+  color: var(--gray-1);
+  font-weight: 700;
+}
+@media(max-width:1280px) {
+  .header {
+    padding: 20px 10px;
+  }
+  .main {
+    padding:  10px;
+  }
+  .main .conteiner-img {
+    max-width: 286px;
+  }
+  .main .contant-main h1 {
+    font-size: 4.8rem;
+    line-height: 7.1rem;
+  }
+  .main .contant-main p {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
